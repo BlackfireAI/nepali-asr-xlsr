@@ -1,0 +1,29 @@
+{
+ "gagan3012/wav2vec2-xlsr-nepali": {
+  "n": 400,
+  "cer": 0.2253,
+  "wer": 0.672,
+  "realtime_factor": 8.6
+ },
+ "shniranjan/wav2vec2-large-xlsr-300m-nepali": {
+  "error": "ImportError: \nWav2Vec2ProcessorWithLM requires the pyctcdecode library but it was not found in your environment. You can install it with pip:\n`pip install pyctcdec"
+ },
+ "spktsagar/wav2vec2-large-xls-r-300m-nepali-openslr": {
+  "n": 400,
+  "cer": 0.2518,
+  "wer": 0.8373,
+  "realtime_factor": 8.2
+ },
+ "anish-shilpakar/wav2vec2-nepali": {
+  "n": 400,
+  "cer": 0.1596,
+  "wer": 0.4831,
+  "realtime_factor": 8.6
+ },
+ "Harveenchadha/vakyansh-wav2vec2-nepali-nem-130": {
+  "n": 400,
+  "cer": 2.487,
+  "wer": 1.0291,
+  "realtime_factor": 21.4
+ }
+}

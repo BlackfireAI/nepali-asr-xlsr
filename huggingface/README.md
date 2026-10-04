@@ -102,9 +102,9 @@ The two tables use different test sets and are not comparable to each other.
 
 ## Training data
 
-611 hours of Nepali speech from IndicVoices (378.4 h), OpenSLR 54 and 43 (81.5 h),
-IndicVoices-R (49.9 h), internal recordings (42.2 h), Vaani (27.2 h), code-switched
-podcast audio (17.3 h), WorldSpeech (12.9 h) and the FLEURS train split (1.2 h).
+611 hours of Nepali speech. Principal sources: IndicVoices (378.4 h), OpenSLR 54 and 43
+(81.5 h), IndicVoices-R (49.9 h), internal recordings (42.2 h), Vaani (27.2 h),
+WorldSpeech (12.9 h) and the FLEURS train split (1.2 h).
 
 The FLEURS test split was held out.
 

@@ -185,7 +185,7 @@ reference transcripts themselves are inconsistent.
 
 ## Training data
 
-611 hours of Nepali speech.
+611 hours of Nepali speech. Principal sources:
 
 | hours | source |
 |---:|---|
@@ -194,7 +194,6 @@ reference transcripts themselves are inconsistent.
 | 49.9 | IndicVoices-R Nepali |
 | 42.2 | Internal recordings |
 | 27.2 | Vaani Nepali |
-| 17.3 | Code-switched podcast audio |
 | 12.9 | WorldSpeech Nepali |
 | 1.2 | FLEURS Nepali (train split only) |
 
