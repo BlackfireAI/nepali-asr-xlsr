@@ -108,19 +108,27 @@ Full output including per utterance hypotheses is in `eval/results_fleurs.json`.
 
 ### Against public Nepali models
 
-A separate run on 400 held-out utterances from our internal corpus. All four models were
-scored in the same run with the same normalisation. These are not the FLEURS numbers above
-and the two tables are not comparable to each other.
+Every model below was scored by us in the same run, on the same 400 FLEURS utterances,
+with the same normalisation and greedy decoding. Reproduce with `eval/evaluate.py` and
+the model id in the first column.
 
-| model | CER | WER |
-|---|---:|---:|
-| **this model** | **0.117** | **0.395** |
-| gagan3012/wav2vec2-xlsr-nepali | 0.293 | 0.767 |
-| xlsr-nepali-english | 0.336 | 0.771 |
-| openai/whisper-large-v3 | 0.352 | 0.956 |
+| model | CER | WER | realtime factor |
+|---|---:|---:|---:|
+| **this model** | **0.120** | **0.374** | 13.1x |
+| anish-shilpakar/wav2vec2-nepali | 0.160 | 0.483 | 8.6x |
+| gagan3012/wav2vec2-xlsr-nepali | 0.225 | 0.672 | 8.6x |
+| spktsagar/wav2vec2-large-xls-r-300m-nepali-openslr | 0.252 | 0.837 | 8.2x |
 
-Two Whisper Nepali fine-tunes returned CER 1.0 on this set. They are excluded as
-non-functional rather than weak.
+`gagan3012/wav2vec2-xlsr-nepali` is the most downloaded Nepali ASR model on the Hub, at
+over 400,000 downloads.
+
+Two models were tested and excluded as non-functional on this set rather than merely weak:
+`Harveenchadha/vakyansh-wav2vec2-nepali-nem-130` returned CER above 1.0, and two Whisper
+Nepali fine-tunes returned CER 1.0. One further model,
+`shniranjan/wav2vec2-large-xlsr-300m-nepali`, could not be loaded without the optional
+`pyctcdecode` dependency and was not scored.
+
+Raw per-model output is in `eval/results_public_fleurs.json`.
 
 ### Generalisation
 

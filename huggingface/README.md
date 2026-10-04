@@ -77,17 +77,17 @@ punctuation stripped, NFC normalised.
 | WER | 0.3744 |
 | realtime factor, CPU 8 threads | 14.4x |
 
-On 400 held-out utterances from our internal corpus, scored in one run against public
-Nepali models:
+Scored in the same run against public Nepali ASR models on the same 400 utterances:
 
 | model | CER | WER |
 |---|---:|---:|
-| this model | 0.117 | 0.395 |
-| gagan3012/wav2vec2-xlsr-nepali | 0.293 | 0.767 |
-| xlsr-nepali-english | 0.336 | 0.771 |
-| openai/whisper-large-v3 | 0.352 | 0.956 |
+| this model | 0.120 | 0.374 |
+| anish-shilpakar/wav2vec2-nepali | 0.160 | 0.483 |
+| gagan3012/wav2vec2-xlsr-nepali | 0.225 | 0.672 |
+| spktsagar/wav2vec2-large-xls-r-300m-nepali-openslr | 0.252 | 0.837 |
 
-The two tables use different test sets and are not comparable to each other.
+Three further models returned CER at or above 1.0 on this set and are excluded as
+non-functional rather than weak.
 
 ## Limitations
 
