@@ -48,6 +48,15 @@ on 611 hours of Nepali speech, producing Devanagari text.
 316M parameters, 16 kHz mono input, CTC decoding with no language model.
 Runs at 14x realtime on CPU.
 
+## Install
+
+```bash
+pip install torch==2.13.0 torchaudio==2.11.0 transformers==5.17.0 soundfile==0.14.0
+```
+
+Those are the versions this model was tested with. Newer ones will most likely work.
+No GPU needed, it is fast on CPU.
+
 ## Usage
 
 ```python

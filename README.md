@@ -10,9 +10,30 @@ Runs at 14x realtime on CPU.
 
 ## Install
 
+Python 3.9 or newer. A GPU is optional, this model is fast on CPU.
+
 ```bash
+python -m venv .venv
+source .venv/bin/activate          # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
+
+That installs the exact versions this model was tested with:
+
+```
+torch 2.13.0 · torchaudio 2.11.0 · transformers 5.17.0 · soundfile 0.14.0
+```
+
+Newer versions will most likely work. If something behaves oddly, pin to these first.
+
+Check it works:
+
+```bash
+python transcribe.py your_audio.wav
+```
+
+The model downloads from Hugging Face on first use, about 1.2 GB, and is cached
+afterwards.
 
 ## Use
 

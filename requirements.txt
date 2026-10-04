@@ -1,4 +1,5 @@
-torch>=2.0
-torchaudio>=2.0
-transformers>=4.40
-soundfile>=0.12
+# Versions verified working. Newer versions are likely fine; these are the ones tested.
+torch==2.13.0
+torchaudio==2.11.0
+transformers==5.17.0
+soundfile==0.14.0
