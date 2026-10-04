@@ -4,3 +4,4 @@ __pycache__/
 *.wav
 *.flac
 model/
+eval/fleurs_ne_audio/

@@ -14,6 +14,7 @@ import json
 import re
 import time
 import unicodedata
+from pathlib import Path
 
 import soundfile as sf
 import torch
@@ -66,7 +67,13 @@ def main() -> None:
     processor = AutoProcessor.from_pretrained(a.model)
     model = AutoModelForCTC.from_pretrained(a.model).to(device).eval()
 
-    rows = [json.loads(l) for l in open(a.manifest, encoding="utf-8") if l.strip()]
+    manifest = Path(a.manifest)
+    rows = [json.loads(l) for l in open(manifest, encoding="utf-8") if l.strip()]
+    # Relative audio paths are resolved against the manifest, not the shell's working
+    # directory, so the benchmark runs the same from anywhere in the repo.
+    for row in rows:
+        if not Path(row["audio_path"]).is_absolute():
+            row["audio_path"] = str((manifest.parent / row["audio_path"]).resolve())
     print(f"{len(rows)} utterances on {device}", flush=True)
 
     refs, hyps, srcs = [], [], []
