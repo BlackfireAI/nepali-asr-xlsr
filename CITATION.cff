@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this model, please cite it as below."
+title: "nepali-asr-xlsr-300m: open Nepali speech recognition"
+authors:
+  - name: "Blackfire A.I. Pvt. Ltd."
+url: "https://huggingface.co/BlackfireAI/nepali-asr-xlsr-300m"
+repository-code: "https://github.com/BlackfireAI/nepali-asr-xlsr"
+license: CC-BY-NC-SA-4.0
+version: "1.0.0"
+date-released: "2026-10-12"
+keywords:
+  - nepali
+  - speech recognition
+  - asr
+  - speech-to-text
+  - devanagari
