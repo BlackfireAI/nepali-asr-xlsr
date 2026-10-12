@@ -2,6 +2,8 @@
 
 # Nepali ASR (XLS-R 300M)
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BlackfireAI/nepali-asr-xlsr/blob/main/try_it_in_colab.ipynb) Try it in your browser: upload a Nepali recording, get Devanagari text. Free, no setup. Nepali only.
+
 Speech recognition for Nepali. A fine-tune of [facebook/wav2vec2-xls-r-300m](https://huggingface.co/facebook/wav2vec2-xls-r-300m)
 on 611 hours of Nepali speech, producing Devanagari text.
 
